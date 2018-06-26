@@ -1,0 +1,804 @@
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+:::Bank Managemet system:::
+
+//Database name : Bankanagement
+//Collection ame : bankdata
+//Number Of record inserted : 15
+---------------------------------------------------------------------------------------------------------------------------------------------
+General Insertion query:
+
+db.bankdata.insert({
+	 _id : "#",accountNo : "#",balance : #,
+    	  customerDetails:{customerId : "#",customerName : "#",
+	                          street : "#",city :"#",loanAmount:#,depositAmount :#},
+               branchDetails:{"branchName":"#","branchCity":"#","assets":#}})
+	
+ # - Field value for Different Documents.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Inserted Data Output:
+
+
+/* 1 */
+{
+    "_id" : "a01",
+    "accountNo" : "1001",
+    "balance" : 600.0,
+    "customerDetails" : {
+        "customerId" : "c01",
+        "customerName" : "Rahul Sharma",
+        "street" : "Arera Hills",
+        "city" : "Bhopal",
+        "loanAmount" : 0,
+        "depositAmount" : 25000.0
+    },
+    "branchDetails" : {
+        "branchName" : "Katraj",
+        "branchCity" : "Pune",
+        "assets" : 10000000.0
+    }
+}
+
+/* 2 */
+{
+    "_id" : "a02",
+    "accountNo" : "1002",
+    "balance" : 60000.0,
+    "customerDetails" : {
+        "customerId" : "c02",
+        "customerName" : "Ram Sharma",
+        "street" : "Red Hills",
+        "city" : "Chennai",
+        "loanAmount" : 10000.0,
+        "depositAmount" : 55000.0
+    },
+    "branchDetails" : {
+        "branchName" : "Raapuram",
+        "branchCity" : "Chennai",
+        "assets" : 8000000.0
+    }
+}
+
+/* 3 */
+{
+    "_id" : "a03",
+    "accountNo" : "1003",
+    "balance" : 1000.0,
+    "customerDetails" : {
+        "customerId" : "c02",
+        "customerName" : "Arun Singh",
+        "street" : "Arjun Vihar",
+        "city" : "Bhopal",
+        "loanAmount" : 50000000.0,
+        "depositAmount" : 5000.0
+    },
+    "branchDetails" : {
+        "branchName" : "TT Nagar",
+        "branchCity" : "Bhopal",
+        "assets" : 20000000.0
+    }
+}
+
+/* 4 */
+{
+    "_id" : "a04",
+    "accountNo" : "1004",
+    "balance" : 5000.0,
+    "customerDetails" : {
+        "customerId" : "c04",
+        "customerName" : "Amar Agrawal",
+        "street" : "Arera Hills",
+        "city" : "Hyderabad",
+        "loanAmount" : 0,
+        "depositAmount" : 0
+    },
+    "branchDetails" : {
+        "branchName" : "Ahmad Nagar",
+        "branchCity" : "Hyderabad",
+        "assets" : 15000000.0
+    }
+}
+
+/* 5 */
+{
+    "_id" : "a05",
+    "accountNo" : "1005",
+    "balance" : 10000.0,
+    "customerDetails" : {
+        "customerId" : "c05",
+        "customerName" : "Shyam Patil",
+        "street" : "Guindi",
+        "city" : "Chennai",
+        "loanAmount" : 100000.0,
+        "depositAmount" : 45000.0
+    },
+    "branchDetails" : {
+        "branchName" : "Porud",
+        "branchCity" : "Chennai",
+        "assets" : 7000000.0
+    }
+}
+
+/* 6 */
+{
+    "_id" : "a06",
+    "accountNo" : "1006",
+    "balance" : 12000.0,
+    "customerDetails" : {
+        "customerId" : "c06",
+        "customerName" : "Riya Pandey",
+        "street" : "AJ",
+        "city" : "Mumbai",
+        "loanAmount" : 100000.0,
+        "depositAmount" : 65000.0
+    },
+    "branchDetails" : {
+        "branchName" : "Vile Parle",
+        "branchCity" : "Mumbai",
+        "assets" : 20000000.0
+    }
+}
+
+/* 7 */
+{
+    "_id" : "a07",
+    "accountNo" : "1007",
+    "balance" : 15000.0,
+    "customerDetails" : {
+        "customerId" : "c07",
+        "customerName" : "Yuvraj Guha",
+        "street" : "AshokaHills",
+        "city" : "Ratlam",
+        "loanAmount" : 0,
+        "depositAmount" : 0
+    },
+    "branchDetails" : {
+        "branchName" : "Vikas Nagar",
+        "branchCity" : "Ratlam",
+        "assets" : 10000000.0
+    }
+}
+
+/* 8 */
+{
+    "_id" : "a08",
+    "accountNo" : "1008",
+    "balance" : 750.0,
+    "customerDetails" : {
+        "customerId" : "c08",
+        "customerName" : "Ankita Rai",
+        "street" : "Lakshmi Nagar",
+        "city" : "Pune",
+        "loanAmount" : 200000.0,
+        "depositAmount" : 50000.0
+    },
+    "branchDetails" : {
+        "branchName" : "Lakshmi Nagar",
+        "branchCity" : "Pune",
+        "assets" : 20000000.0
+    }
+}
+
+/* 9 */
+{
+    "_id" : "a09",
+    "accountNo" : "1009",
+    "balance" : 900.0,
+    "customerDetails" : {
+        "customerId" : "c09",
+        "customerName" : "Yash Sharma",
+        "street" : "Rajwada",
+        "city" : "Indore",
+        "loanAmount" : 50000.0,
+        "depositAmount" : 15000.0
+    },
+    "branchDetails" : {
+        "branchName" : "Gita Bhawan",
+        "branchCity" : "Indore",
+        "assets" : 5000000.0
+    }
+}
+
+/* 10 */
+{
+    "_id" : "a10",
+    "accountNo" : "1010",
+    "balance" : 850.0,
+    "customerDetails" : {
+        "customerId" : "c10",
+        "customerName" : "Ankita Kapoor",
+        "street" : "St.Marry ",
+        "city" : "Mubai",
+        "loanAmount" : 2000000.0,
+        "depositAmount" : 500000.0
+    },
+    "branchDetails" : {
+        "branchName" : "St.Cruz",
+        "branchCity" : "Mumbai",
+        "assets" : 20000000.0
+    }
+}
+
+/* 11 */
+{
+    "_id" : "a11",
+    "accountNo" : "1011",
+    "balance" : 10000.0,
+    "customerDetails" : {
+        "customerId" : "c11",
+        "customerName" : "Ajay Dev",
+        "street" : "Ram Nagar",
+        "city" : "Ayodhya",
+        "loanAmount" : 500000.0,
+        "depositAmount" : 100000.0
+    },
+    "branchDetails" : {
+        "branchName" : "Ranipur",
+        "branchCity" : "Ayodhya",
+        "assets" : 1000000.0
+    }
+}
+
+/* 12 */
+{
+    "_id" : "a12",
+    "accountNo" : "1012",
+    "balance" : 5000.0,
+    "customerDetails" : {
+        "customerId" : "c12",
+        "customerName" : "Amar Agrawal",
+        "street" : "Arera Hills",
+        "city" : "Hyderabad",
+        "loanAmount" : 0.0,
+        "depositAmount" : 0.0
+    },
+    "branchDetails" : {
+        "branchName" : "Popular Market",
+        "branchCity" : "Hyderabad",
+        "assets" : 10000000.0
+    }
+}
+
+/* 13 */
+{
+    "_id" : "a13",
+    "accountNo" : "1013",
+    "balance" : 5000.0,
+    "customerDetails" : {
+        "customerId" : "c13",
+        "customerName" : "Amar Agrawal",
+        "street" : "Arera Hills",
+        "city" : "Hyderabad",
+        "loanAmount" : 0.0,
+        "depositAmount" : 0.0
+    },
+    "branchDetails" : {
+        "branchName" : "Sarvana Nagar",
+        "branchCity" : "Hyderabad",
+        "assets" : 20000000.0
+    }
+}
+
+/* 14 */
+{
+    "_id" : "a14",
+    "accountNo" : "1014",
+    "balance" : 15000.0,
+    "customerDetails" : {
+        "customerId" : "c14",
+        "customerName" : "Bharat Omar",
+        "street" : "rockHills",
+        "city" : "Hyderabad",
+        "loanAmount" : 10000.0,
+        "depositAmount" : 2000.0
+    },
+    "branchDetails" : {
+        "branchName" : "Popular Market",
+        "branchCity" : "Hyderabad",
+        "assets" : 10000000.0
+    }
+}
+
+/* 15 */
+{
+    "_id" : "a15",
+    "accountNo" : "1015",
+    "balance" : 5200.0,
+    "customerDetails" : {
+        "customerId" : "c15",
+        "customerName" : "Ravi Arora",
+        "street" : "Shyamla",
+        "city" : "chennai",
+        "loanAmount" : 0.0,
+        "depositAmount" : 0.0
+    },
+    "branchDetails" : {
+        "branchName" : "Raapuram",
+        "branchCity" : "Chennai",
+        "assets" : 8000000.0
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+fetching Records    
+INPUT:
+
+db.bankdata.find()
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Creating Index and Primary Key:
+
+
+INPUT:
+db.bankdata.ensureIndex({accountNo:1},{unique:true})
+----------------------------------------------------------------------------------------------------------------------------
+Names And Cities Of Borrowers:
+
+INPUT:
+
+db.bankdata.find({"customerDetails.loanAmount":{$gt:0}},
+                       {"customerDetails.customerName":1,
+	            "customerDetails.city":1,_id:0})
+
+OUTPUT:
+
+/* 1 */
+{
+    "customerDetails" : {
+        "customerName" : "Rahul Sharma",
+        "city" : "Bhopal"
+    }
+}
+
+/* 2 */
+{
+    "customerDetails" : {
+        "customerName" : "Ram Sharma",
+        "city" : "Chennai"
+    }
+}
+
+/* 3 */
+{
+    "customerDetails" : {
+        "customerName" : "Arun Singh",
+        "city" : "Bhopal"
+    }
+}
+
+/* 4 */
+{
+    "customerDetails" : {
+        "customerName" : "Ram Patil",
+        "city" : "Chennai"
+    }
+}
+
+/* 5 */
+{
+    "customerDetails" : {
+        "customerName" : "Riya Pandey",
+        "city" : "Mumbai"
+    }
+}
+
+/* 6 */
+{
+    "customerDetails" : {
+        "customerName" : "Ankita Rai",
+        "city" : "Pune"
+    }
+}
+
+/* 7 */
+{
+    "customerDetails" : {
+        "customerName" : "Yash Sharma",
+        "city" : "Indore"
+    }
+}
+
+/* 8 */
+{
+    "customerDetails" : {
+        "customerName" : "Ankita Kapoor",
+        "city" : "Mubai"
+    }
+}
+
+/* 9 */
+{
+    "customerDetails" : {
+        "customerName" : "Ajay Dev",
+        "city" : "Ayodhya"
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The names of borrowers who live in Chennai
+
+INPUT:
+
+db.bankdata.find({"customerDetails.loanAmount":{$gt:0},
+		"customerDetails.city":"Chennai"},
+                 	{"customerDetails.customerName":1})
+
+OUTPUT:
+
+{
+    "_id" : "a02",
+    "customerDetails" : {
+        "customerName" : "Ram Sharma"
+    }
+}
+
+/* 2 */
+{
+    "_id" : "a05",
+    "customerDetails" : {
+        "customerName" : "Ram Patil"
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Find the name, city, and assets of the branch with the largest assets.
+ 
+INPUT:
+
+db.bankdata.find({},{"branchDetails.branchName":1,"branchDetails.branchCity":1,
+                    "branchDetails.assets":1}).sort({"branchDetails.assets":-1}).limit(1)
+
+OUTPUT:
+{
+    "_id" : "a03",
+    "branchDetails" : {
+        "branchName" : "TT Nagar",
+        "branchCity" : "Bhopal",
+        "assets" : 20000000.0
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The names and cities of customers who have a loan at Pune branch.
+
+INPUT: 
+
+db.bankdata.find({"customerDetails.loanAmount":{$gt:0},"branchDetails.branchCity":"Pune"},
+                {"customerDetails.customerName":1,"customerDetails.city":1})
+
+OUTPUT:
+
+/* 1 */
+{
+    "_id" : "a01",
+    "customerDetails" : {
+        "customerName" : "Rahul Sharma",
+        "city" : "Bhopal"
+    }
+}
+
+/* 2 */
+{
+    "_id" : "a08",
+    "customerDetails" : {
+        "customerName" : "Ankita Rai",
+        "city" : "Pune"
+    }
+} 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Find the number of accounts with balances between 700 and 900. 
+
+INPUT:
+db.bankdata.aggregate([{$match:{balance:{$gt:700,$lt:900}}},{$count:"Account_No"}])
+
+OUTPUT:
+{
+    "Account_No" : 2
+} 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The names of customers with both deposits and loans at Pune branch.
+
+INPUT:
+db.bankdata.find({"customerDetails.loanAmount":{$gt:0},
+                  "customerDetails.depositAmount":{$gt:0},
+                  "branchDetails.branchCity":"Pune"},
+                  {"customerDetails.customerName":1})
+OUTPUT:
+/* 1 */
+{
+    "_id" : "a01",
+    "customerDetails" : {
+        "customerName" : "Rahul Sharma"
+    }
+}
+
+/* 2 */
+{
+    "_id" : "a08",
+    "customerDetails" : {
+        "customerName" : "Ankita Rai"
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The customers whose total loans are greater than the total amount in their bank accounts
+
+INPUT:
+db.bankdata.find({ $where: "this.customerDetails.loanAmount > this.balance"},
+                  {"customerDetails.customerName":1,accountNo:1,
+                      "customerDetails.loanAmount":1,balance:1})
+OUTPUT:
+
+/* 1 */
+{
+    "_id" : "a03",
+    "accountNo" : "1003",
+    "balance" : 1000.0,
+    "customerDetails" : {
+        "customerName" : "Arun Singh",
+        "loanAmount" : 50000000.0
+    }
+}
+
+/* 2 */
+{
+    "_id" : "a05",
+    "accountNo" : "1005",
+    "balance" : 10000.0,
+    "customerDetails" : {
+        "customerName" : "Ram Patil",
+        "loanAmount" : 100000.0
+    }
+}
+
+/* 3 */
+{
+    "_id" : "a06",
+    "accountNo" : "1006",
+    "balance" : 12000.0,
+    "customerDetails" : {
+        "customerName" : "Riya Pandey",
+        "loanAmount" : 100000.0
+    }
+}
+
+/* 4 */
+{
+    "_id" : "a08",
+    "accountNo" : "1008",
+    "balance" : 750.0,
+    "customerDetails" : {
+        "customerName" : "Ankita Rai",
+        "loanAmount" : 200000.0
+    }
+}
+
+/* 5 */
+{
+    "_id" : "a09",
+    "accountNo" : "1009",
+    "balance" : 900.0,
+    "customerDetails" : {
+        "customerName" : "Yash Sharma",
+        "loanAmount" : 50000.0
+    }
+}
+
+/* 6 */
+{
+    "_id" : "a10",
+    "accountNo" : "1010",
+    "balance" : 850.0,
+    "customerDetails" : {
+        "customerName" : "Ankita Kapoor",
+        "loanAmount" : 2000000.0
+    }
+}
+
+/* 7 */
+{
+    "_id" : "a11",
+    "accountNo" : "1011",
+    "balance" : 10000.0,
+    "customerDetails" : {
+        "customerName" : "Ajay Dev",
+        "loanAmount" : 500000.0
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The names of customers living on streets with names ending in "Hill". 
+
+INPUT:
+db.bankdata.find({"customerDetails.street":{$regex:"Hills$"}},
+                  {"customerDetails.customerName":1})     
+
+OUTPUT:
+/* 1 */
+{
+    "_id" : "a01",
+    "customerDetails" : {
+        "customerName" : "Rahul Sharma"
+    }
+}
+
+/* 2 */
+{
+    "_id" : "a02",
+    "customerDetails" : {
+        "customerName" : "Ram Sharma"
+    }
+}
+
+/* 3 */
+{
+    "_id" : "a04",
+    "customerDetails" : {
+        "customerName" : "Amar Agrawal"
+    }
+}
+
+/* 4 */
+{
+    "_id" : "a07",
+    "customerDetails" : {
+        "customerName" : "Yuvraj Guha"
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The names of customers with an account but not a loan at Pune branch
+
+INPUT:
+db.bankdata.find({"branchDetails.branchCity":"Pune","customerDetails.loanAmount":0},
+                  {"customerDetails.customerName":1,accountNo:1}) 
+
+OUTPUT:
+/* 1 */
+{
+    "_id" : "a01",
+    "accountNo" : "1001",
+    "customerDetails" : {
+        "customerName" : "Rahul Sharma"
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The names of branches whose assets are greater than the assets of all branches in  Hyderabad. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The branch with the largest average balance. 
+
+INPUT:
+db.bankdata.aggregate([{
+ $group :{ _id :"$branchDetails.branchName",AvgBalance:{$avg:"$balance"}}},{$sort:{"AvgBalance":-1}},{$limit:1}]) 
+
+OUTPUT:
+{
+    "_id" : "Raapuram",
+    "AvgBalance" : 42600.0
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+The branch name and number of customers for each branch
+
+INPUT:
+
+db.bankdata.aggregate([{$group:{_id:"$branchDetails.branchName",totalCustomers:{$sum:1}}}]) 
+
+OUTPUT:
+/* 1 */
+{
+    "_id" : "Sarvana Nagar",
+    "totalCustomers" : 1.0
+}
+
+/* 2 */
+{
+    "_id" : "Ranipur",
+    "totalCustomers" : 1.0
+}
+
+/* 3 */
+{
+    "_id" : "St.Cruz",
+    "totalCustomers" : 1.0
+}
+
+/* 4 */
+{
+    "_id" : "Gita Bhawan",
+    "totalCustomers" : 1.0
+}
+
+/* 5 */
+{
+    "_id" : "Lakshmi Nagar",
+    "totalCustomers" : 1.0
+}
+
+/* 6 */
+{
+    "_id" : "Ahmad Nagar",
+    "totalCustomers" : 1.0
+}
+
+/* 7 */
+{
+    "_id" : "Popular Market",
+    "totalCustomers" : 2.0
+}
+
+/* 8 */
+{
+    "_id" : "Raapuram",
+    "totalCustomers" : 2.0
+}
+
+/* 9 */
+{
+    "_id" : "TT Nagar",
+    "totalCustomers" : 1.0
+}
+
+/* 10 */
+{
+    "_id" : "Katraj",
+    "totalCustomers" : 1.0
+}
+
+/* 11 */
+{
+    "_id" : "Porud",
+    "totalCustomers" : 1.0
+}
+
+/* 12 */
+{
+    "_id" : "Vikas Nagar",
+    "totalCustomers" : 1.0
+}
+
+/* 13 */
+{
+    "_id" : "Vile Parle",
+    "totalCustomers" : 1.0
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Deposit an additional Rs. 20,000 to Ram’s bank account. 
+ 
+ 
+INPUT:
+
+db.bankdata.update({"customerDetails.customerName":"Ram Sharma"},{$inc:{balance:20000}})
+
+
+OUPUT:
+
+ Updated 1 existing record(s)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
